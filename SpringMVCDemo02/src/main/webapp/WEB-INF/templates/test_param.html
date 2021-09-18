@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en"  xmlns:th="http://www.thymeleaf.org">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+
+<a th:href="@{/param/testServletApi(user='123')}">来吧</a>
+
+<br/>
+<a th:href="@{/param/testSpringApi(user='123', pwd='999')}">testSpringApi</a>
+
+<br/>
+
+<form method="get" th:action="@{/param/testSpringApiForm}">
+
+<!--  <input type="text" name="user"/>-->
+  <input type="text" name="pwd"/>
+    <input type="text" name="age_values"/>
+    <input type="checkbox" name="gender" value="Bike" />bike
+  <input type="checkbox" name="gender" value="Car" checked="checked" />car
+  <input type="submit" value="提交" />
+</form>
+
+<br/>
+
+<form method="post" th:action="@{/param/tesetBean}">
+
+  <input type="text" name="id">
+    <input type="text" name="username"/>
+    <input type="text" name="password"/>
+    <input type="text" name="sex">
+    <input type="text" name="email" >
+    <input type="submit" value="提交" />
+</form>
+
+<br/>
+<br/>
+<br/>
+<br/>
+<br/>
+<br/>
+<br/>
+<br/>
+<br/>
+<br/>
+<br/>
+<br/>
+
+
+</body>
+</html>

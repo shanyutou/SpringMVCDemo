@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en" xmlns:th="http://www.thymeleaf.org">
+<head>
+    <meta charset="UTF-8">
+    <title>index html</title>
+</head>
+<body>
+
+<a th:href="@{/hello/first}">hello world!!!</a>
+<a th:href="@{/hello/second}">hello world!!!</a>
+
+
+<form th:action="@{/hello/first}" method="put">
+    <input type="submit" value="hello"/>
+</form>
+
+<a th:href="@{/hello/testparamsAndHeaders(username='admin', pwd=123)}">hello world!!!</a>
+
+
+
+
+<form th:action="@{/hello/testparamsAndHeaders}" method="put">
+    <input >
+    <input type="text" name="username">
+    <input type="submit" value="params"/>
+</form>
+
+<a th:href="@{/hello/a2}">ant?</a>
+<br>
+
+<a th:href="@{/hello/b6662}">ant*</a>
+<br>
+<a th:href="@{/abc/cbb}">abc/cbb</a>
+
+<br>
+<a th:href="@{/hello/qwe/java/ggg}">Rest</a>
+
+</body>
+</html>
