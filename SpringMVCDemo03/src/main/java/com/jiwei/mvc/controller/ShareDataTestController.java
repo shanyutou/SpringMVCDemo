@@ -65,5 +65,14 @@ public class ShareDataTestController {
         context.setAttribute("testAppScope", "hello, application");
         return "success";
     }
+    @RequestMapping("/testForward")
+    public String forward(){
+        return "forward:/testSession";
+    }
+
+    @RequestMapping("/redirect")
+    public String Redirect(){
+        return "redirect:/testApplication";
+    }
 
 }
